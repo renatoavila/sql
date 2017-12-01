@@ -1,11 +1,12 @@
-use seubanco
+USE [seubanco]
+GO
 
 DECLARE 
-			@variavelInt int,
+			@variavelInt INT,
 			@variavelVarchar VARCHAR(30)
  
 DECLARE cursorNome CURSOR FOR
-select variavelInt, variavelVarchar from tabela
+SELECT variavelInt, variavelVarchar FROM tabela
  
 OPEN cursorNome
  
